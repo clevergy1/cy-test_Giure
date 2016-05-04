@@ -1,0 +1,18 @@
+case CTRL_MODE of
+	0: 	// Manuale OFF
+		ModeToServer := 0;
+		ForcedOn := 0;
+		ForcedOff := 1;
+	1:	// Manuale ON
+		ModeToServer := 1;
+		ForcedOn := 1;
+		ForcedOff := 0;	
+	2:	// Cronografo
+		ModeToServer := 2;
+		ForcedOn := 0;
+		ForcedOff := 0;	
+	3: 	//Timer 
+		ModeToServer := 3;
+		ForcedOn := 0;
+		ForcedOff := 0;	
+end_case
